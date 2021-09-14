@@ -1,0 +1,273 @@
+/*modal*/
+.form-elegant .font-small {
+    font-size: 0.8rem; }
+
+.form-elegant .z-depth-1a {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+    box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25); }
+
+.form-elegant .z-depth-1-half,
+.form-elegant .btn:hover {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15); }
+
+.form-elegant .modal-header {
+    border-bottom: none; }
+
+.modal-dialog .form-elegant .btn .fab {
+    color: #2196f3!important; }
+
+.form-elegant .modal-body, .form-elegant .modal-footer {
+    font-weight: 400; }
+
+    /*radio button*/
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+      
+      article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+        display: block;
+      }
+      
+      
+      body {
+        background-color: #fff;
+      }
+      
+      .lvl{ /* text that indicates year level(fresh,soph,jr,sr) */
+        font-size: 25px;
+        margin-left: 50px;
+      }
+      .lvl2{ /* text that indicates year level(fresh,soph,jr,sr) */
+        font-size: 25px;
+        padding-top: 160px;
+      
+      }
+      
+      .lvl3{ /* text that indicates year level(fresh,soph,jr,sr) */
+        font-size: 25px;
+        margin-left: 250px;
+        padding-top: 160px;
+      }
+      
+      .lvl4{ /* text that indicates year level(fresh,soph,jr,sr) */
+        font-size: 25px;
+        margin-left: 450px;
+        padding-top: 160px;
+      }
+      
+      
+      .student/*Student info*/
+      {
+        text-align: justify;
+        font-size: 14px;
+      }
+      
+      .units { /*units in the bottom of each col indicating number of units per term */
+        margin-left: 15px;
+        background-color: rgb(240, 240, 240);
+        width: 75px;
+        border: 1px solid black;
+        
+      }
+      
+      .number {/*number is the text indicating term number above subjs and the text for number of terms */
+        background-color: rgb(240, 240, 240);
+        width: 75px;
+        border: 1px solid black;
+      }
+      
+      .summer { /*summer is the summer text */
+        background-color: rgb(240, 240, 240);
+        width: 65px;
+        height: 30px;
+        text-align: center;
+        border: 1px solid black;
+        font-size: 15px;
+        padding: center;
+      }
+      
+      .information{/*information are the texts found in the bottom, beside the legend  */
+      font-size: 10px;
+      text-align: justify;
+      }
+      
+      
+      .summerbox /*summer is the box for the summer text */
+      {
+        padding-left: 13px;
+        width: 75px;
+      }
+      
+      
+      .unitbox /*unitbox is the box for the text for the term */
+      {
+        padding-left: 13px;
+        width: 75px;
+      }
+      
+      .totalbox /*totalbox is the box for the text of total number of units */
+      {
+        padding-left: 13px;
+        width: 75px;
+      }
+      
+      .gap /*gap between subjects */
+      {
+        padding-bottom: 9px;
+        padding-left: 13px;
+      }
+      
+      .passed {
+          box-shadow: 0px 0px 0px 2px #9fb4f2;
+          background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+          background-color:#7892c2;
+          display:inline-block;
+          cursor:pointer;
+          color:#ffffff;
+          font-family:Arial;
+          font-size:12px;
+          padding:11px 5px;
+          text-decoration:none;
+        text-shadow:0px 1px 0px #283966;
+        width: 75px;
+        padding-bottom: 5px;
+      }
+      .passed:hover {
+          background:linear-gradient(to bottom, #fcfcfc 5%, #7892c2 100%);
+          background-color:#f7f7f7;
+      }
+      .passed:active {
+          position:relative;
+          top:1px;
+      }
+      
+      .current {
+          box-shadow: 0px 0px 0px 2px #3dc21b;
+          background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+          background-color:#44c767;
+          display:inline-block;
+          cursor:pointer;
+          color:#ffffff;
+          font-family:Arial;
+          font-size:12px;
+          padding:11px 6px;
+          text-decoration:none;
+        text-shadow:0px 1px 0px #2f6627;
+        width: 75px;
+        padding-bottom: 5px;
+      }
+      .current:hover {
+          background:linear-gradient(to bottom, #fefffe 5%, #44c767 100%);
+          background-color:#5cbf2a;
+      }
+      .current:active {
+          position:relative;
+          top:1px;
+      }
+      
+      .enlisted {
+          box-shadow: 0px 0px 0px 2px #fa1919;
+          background:linear-gradient(to bottom, #ed4747 5%, #ed4747 100%);
+          background-color:#ed4747;
+          display:inline-block;
+          cursor:pointer;
+          color:#ffffff;
+          font-family:Arial;
+          font-size:12px;
+          padding:11px 6px;
+          text-decoration:none;
+        text-shadow:0px 1px 0px #eba4a4;
+        width: 75px;
+        padding-bottom: 5px;
+      }
+      .enlisted:hover {
+          background:linear-gradient(to bottom, #ebebeb 5%, #ed4747 100%);
+          background-color:#ed4747;
+      }
+      .enlisted:active {
+          position:relative;
+          top:1px;
+      }
+      
+      .junior {
+          box-shadow: 0px 0px 0px 2px #eef0a8;
+          background:linear-gradient(to bottom, #eff29b 5%, #eff29b 100%);
+          background-color:#eff29b;
+          display:inline-block;
+          cursor:pointer;
+          color:#161515;
+          font-family:Arial;
+          font-size:12px;
+          padding:11px 6px;
+          text-decoration:none;
+        text-shadow:0px 1px 0px #e6c045;
+        width: 75px;
+        padding-bottom: 5px;
+      }
+      .junior:hover {
+          background:linear-gradient(to bottom, #f5f5f4 5%, #eff29b 100%);
+          background-color:#eff29b;
+      }
+      .junior:active {
+          position:relative;
+          top:1px;
+      }
+      
+      
+      .PassLeg { /*passleg is passed legend below*/
+        background-color:  #7892c2;
+        width: 20px;
+        height: 20px;
+        border: 1px solid  black;
+        padding-top: 10px;
+      }
+      
+      .EnroLeg {/*Enroleg is Enrolled legend below*/
+        background-color:  #44c767;
+        width: 20px;
+        height: 20px;
+        border: 1px solid  black;
+        padding-top: 10px;
+      }
+      
+      .EnliLeg {/*EnliLeg is enlisted legend below*/
+        background-color:  #ed4747;
+        width: 20px;
+        height: 20px;
+        border: 1px solid  black;
+        padding-top: 10px;
+      }
+      
+      .FutuLeg {/*futuleg is the yellow box below*/
+        background-color:  #eff29b;
+        width: 20px;
+        height: 20px;
+        border: 1px solid  black;
+        padding-top: 10px;
+      }
+      
+      .legbox {/*legbox is the box alignment for the legend below*/
+        padding-left: 50px;
+        width: 75px;
+        padding-bottom: 5px;
+      }
+      
+      .legtxt
+      {
+        font-size: 8px;
+        text-align: justify;
+      }
+      
+      
+      
+              
+      
+      
+      
+      
+      
