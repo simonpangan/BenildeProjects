@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "6kluKFc9mpmrB/EdM2IrNYArmQv3hzQoK+kYRgHy1jM2idUV1CIUmdbDgWkujerHfQPDrD1tKoyqdyI1uovo5w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\simon\\Downloads\\MobdevtProj-main\\FinalProj\\FinalProj\\FinalProj.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\simon\\.nuget\\packages\\geotimezone\\4.1.0\\geotimezone.4.1.0.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\json.net\\1.0.25\\json.net.1.0.25.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\timezoneconverter\\3.4.0\\timezoneconverter.3.4.0.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
