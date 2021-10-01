@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+	
+<h:head>
+	<f:metadata>
+	
+			<f:event type="preRenderView" 
+		listener="#{logincontroller.isSchool}"/> 
+		
+		
+		  	<f:event type="preRenderView" 
+		listener="#{logincontroller.isLogin}"/> 
+		
+	</f:metadata>
+	<title>JCH | School Profile </title>
+</h:head>
+
+<h:body>
+	<ui:include src="/templates/school_navbar.xhtml" />
+	<div class="container">
+	
+	<br/><br/>
+	<div id="feature">
+		<h1 class="highlight">SCHOOL</h1>
+	</div>
+	
+	<div>
+		<h:messages globalOnly="true" />
+	</div>
+	<h1>WELCOME! - *retrieve the infos from the database*</h1>
+	<hr/>
+	
+<h:panelGroup layout="block" >
+				<div class="col-md-5 col-md-offset-1 log">
+				    <div class="form-group">
+						<h:outputLabel>School Name:</h:outputLabel> 
+						<h:inputText value="#{accounts.schoolname}" class="form-control"/>
+	        		</div>
+	        		<div class="form-group">
+	        			<h:outputLabel>Address:</h:outputLabel> 
+						<h:inputText value="#{accounts.address}" class="form-control"/>
+	        		</div>
+	       	        <div class="form-group">
+	       	  			<h:outputLabel>Tel Num:</h:outputLabel> 
+						<h:inputText value="#{accounts.telNo}" class="form-control"/>
+	        		</div>
+	        		<div class="form-group">
+	        			<h:outputLabel>Cel No:</h:outputLabel> 
+						<h:inputText value="#{accounts.celNo}" class="form-control"/>
+	        		</div>
+	        	</div>
+	        	<div class="col-md-5">
+	        		<div class="form-group">
+						<h:outputLabel>Email:</h:outputLabel>
+						<h:inputText value="#{accounts.email}" id="asd" class="form-control"/>
+	        		</div>
+	        </div>
+		</h:panelGroup>
+</div>
+</h:body>
+</html>

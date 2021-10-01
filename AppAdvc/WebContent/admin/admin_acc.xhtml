@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">	
+	
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=bFV8h4hjZByVkPgUfeBWzg_-dNnLcpWrLjsHmR8O2j86cb0fdJ_d2L6WLPv_uqizIuvjuKRNmtFA9kwDjPPWc_kkgYWxX2Pl2g1pN4RYUGwP_w6s61rMx9U0bbNQlUz61FRENd_EpwOpDeqJxqbe5teetlDnvJFNtfK6dVFMPChG1DUkqRCQ9uQe7U29D7uUwexTX8DHIJj8WXC9-2i-d6XDchzTSffOYYaM-m2Mdk1OEsgFJpxb6q5mVNI2I3llQZ2a4oIMfNTyk198-D_90ASI4PcbH-gHab3FvZ9s0Yi2KqDghGEH0uK5sGAUp7V0C_mNKQD4Bb1AKQjHOE2k5k2vL-kV7YvXZ-lpC0Hhr666_9jnEE0IMDrsZk_b_xFLKcNNlUMfHb9BW9MrU-PuHLiuOBk30O06fMkcHEe_A1kWj-OdAtJl2fOkD66Tmx-0YuE84iqVSfBfOiVX569X6w" charset="UTF-8"></script><h:head>
+
+	<f:metadata>
+		<f:event type="preRenderView" 
+		listener="#{logincontroller.isAdmin}"/> 
+		
+		
+		  	<f:event type="preRenderView" 
+		listener="#{logincontroller.isLogin}"/> 
+		<f:event type="preRenderView" listener="#{admincontroller.getdatas}"/> 
+		
+	  </f:metadata>
+	  
+	
+	<title>${title}</title>
+	
+	
+ <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"/>
+
+</h:head>
+
+<h:body>
+
+	<ui:include src="/templates/admin_navbar.xhtml" />
+	
+	<div class="container">
+		<br/><br/>
+		<div id="feature">
+			<h1 class="highlight">ADMIN</h1>
+			
+		</div>
+		
+		
+	
+		<br/>
+			<canvas id="myChart" width="600" height="400"/>
+			
+<br/><br/><br/><br/><br/>
+			<a id="download"
+			        download="ChartImage.jpg" 
+			        href=""
+			        class="btn btn-primary float-right bg-flat-color-1"
+			        title="Descargar Gráfico">
+			
+			        <!-- Download Icon -->
+			 <i class="fa fa-download"></i>
+			 </a>
+		
+		</div>
+	
+	    	 <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+			    
+			<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+			<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+			
+		<script type="text/javascript">
+		
+		document.getElementById("download").addEventListener('click', function(){
+			
+			
+			  /*Get image of canvas element*/
+			  var url_base64jp = document.getElementById("myChart").toDataURL("image/jpg");
+			  /*get download button (tag: <a></a>) */
+			  var a =  document.getElementById("download");
+			  /*insert chart image url to download button (tag: <a></a>) */
+			  a.href = url_base64jp;
+			});
+		
+		
+		window.onload=function(){
+		
+			
+			var ctx = document.getElementById("myChart").getContext('2d');
+			Chart.defaults.global.defaultFontSize = 17
+			Chart.defaults.global.defaultFontStyle = 'Bold';
+			var myChart = new Chart(ctx, {
+			  type: 'pie',
+			  data: {
+				  labels: [
+				    	"Full-Stack Web Development",
+				    	"Mobile Development",
+				    	"Front-End Web Development",
+				    	"Data Science",
+				    	"UX Design",
+				    	"Digital Marketing",
+				    	"Product Management",
+				    	"Security",
+				    ],
+			    datasets: [{
+			      backgroundColor: [
+			    	   "#FF6384",
+		                "#63FF84",
+		                "Black",
+		                "#8463FF",
+		                "#6384FF",
+		                "green",
+		                "lightblue",
+		                "yellow"
+			      ],
+			      data: ["#{admincontroller.data[0]}","#{admincontroller.data[1]}",
+		            	"#{admincontroller.data[2]}","#{admincontroller.data[3]}",
+		            	"#{admincontroller.data[4]}","#{admincontroller.data[5]}",
+		            	"#{admincontroller.data[6]}","#{admincontroller.data[7]}"]
+			    }]
+			  }
+			});
+			
+			
+		};
+		</script>   	    
+			    
+</h:body>
+</html>

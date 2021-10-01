@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	 xmlns:ui="http://java.sun.com/jsf/facelets"
+	 xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+
+<f:metadata>
+	
+			<f:event type="preRenderView" 
+		listener="#{logincontroller.isAdmin}"/> 
+		
+		
+		  	<f:event type="preRenderView" 
+		listener="#{logincontroller.isLogin}"/> 
+		
+	</f:metadata>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<h:outputStylesheet library="css_cos" name="style.css"/>
+	<h:outputStylesheet library="bootstrap" name="bootstrap.css"/>
+ 	<h:outputScript library = "js" name = "jquery-3.4.1.min.js" /> 
+	<title>JCH | Update</title>
+</h:head>
+
+<h:body>
+	<ui:include src="/templates/admin_navbar.xhtml" />
+	
+<div class="container">
+	<br/><br/>
+		<div id="feature">
+			<h1 class="highlight">Update</h1>
+		</div>
+		
+<h:form  rendered="#{accounts.userType == 'Admin' || accounts.userType == 'Joiner' }">
+		<h:panelGroup layout="block" >
+				<h1>ADMIN / JOINER</h1>
+				<hr/>
+				<div class="col-md-5 col-md-offset-1 log">
+				    <div class="form-group">
+						<h:outputLabel>First name:</h:outputLabel> 
+						<h:inputText value="#{accounts.firstname}" class="form-control" id="firstName"  required="true" requiredMessage="This field is required"/>
+						<h:message for="firstName"/>
+	        		</div>
+	        		<div class="form-group">
+	       				<h:outputLabel>Middle name:</h:outputLabel> 
+						<h:inputText value="#{accounts.middlename}" class="form-control" id="middlename" required="true" requiredMessage="This field is required"/>
+						<h:message for="middlename"/>
+	        		</div>
+	        	   	<div class="form-group">
+	        	   		<h:outputLabel>Last name:</h:outputLabel> 
+						<h:inputText value="#{accounts.lastname}" class="form-control" id="lastname" required="true" requiredMessage="This field is required"/>
+	       				<h:message for="lastname"/>
+	        		</div>
+	        		<div class="form-group">
+	        			<h:outputLabel>Age:</h:outputLabel> 
+						<h:inputText value="#{accounts.age}" class="form-control" id="age" required="true" requiredMessage="This field is required"/>
+	    	       		<h:message for="age"/>    		
+	        		</div>
+	        		<div class="form-group">
+	        			<h:outputLabel>Address:</h:outputLabel> 
+						<h:inputText value="#{accounts.address}" class="form-control" id="address" required="true" requiredMessage="This field is required"/>
+	       				<h:message for="address"/>    		
+	        		</div>
+	        	</div>
+	       		<div class="col-md-5">
+	       	   		<div class="form-group">
+						<h:outputLabel>Tel Num:</h:outputLabel> 
+						<h:inputText value="#{accounts.telNo}" class="form-control" id="telno" required="true" requiredMessage="This field is required"/>
+	 	       			<h:message for="telno"/>       		
+	        		</div>
+	        		<div class="form-group">
+	        			<h:outputLabel>Cel No:</h:outputLabel> 
+						<h:inputText value="#{accounts.celNo}" class="form-control" id="celno" required="true" requiredMessage="This field is required"/>
+	 	       			<h:message for="celno"/>       	
+	        		</div>
+	          		<div class="form-group">
+	          			<h:outputLabel>Email:</h:outputLabel>
+						<h:inputText type="email" value="#{accounts.email}" class="form-control" id="email" required="true" requiredMessage="This field is required"/>
+	        		    <h:message for="email"/>	
+	        		</div>
+	        		<div class="form-group">
+	        			<h:outputLabel>Password:</h:outputLabel> 
+						<h:inputSecret value="#{accounts.password}" class="form-control" id="password" required="true" requiredMessage="This field is required"/>
+	      				<h:message for="password"/>
+	        		</div>
+	        						
+	        		<div class="form-group">
+	        			<h:outputLabel>Status:</h:outputLabel>
+		  				<h:selectOneRadio value="#{accounts.accountStatus}" required="true">
+						   	<f:selectItem itemValue="Active" itemLabel="Active" />
+						   	<f:selectItem itemValue="Inactive" itemLabel="Inactive" />
+						</h:selectOneRadio>
+						
+						<div class="pull-right">
+							<h:commandButton value="Save" class="btn btn-info"
+				 			action="#{admincontroller.updateacc(accounts)}"/> 
+						</div>
+	        		</div>
+	        		<p><h:outputLink value="index.xhtml">Back to List</h:outputLink></p>
+	       		</div>
+		
+		</h:panelGroup>
+			<h:inputHidden value = "#{accounts.accountID}" id = "hiddeasdasdanField" /> 
+			<h:inputHidden value = "#{accounts.userType}" id = "hiddenField" /> 
+	</h:form>
+	
+	
+	<h:form  rendered="#{accounts.userType == 'School'}">
+		<h:panelGroup layout="block" >
+			<h1>SCHOOL</h1>
+			<hr/>
+				<div class="col-md-5 col-md-offset-1 log">
+				    <div class="form-group">
+						<h:outputLabel>School Name:</h:outputLabel> 
+						<h:inputText value="#{accounts.schoolname}" class="form-control" id="schoolName" required="true" requiredMessage="This field is required"/>
+	      				<h:message for="schoolName"/>
+	        		</div>
+	        		<div class="form-group">
+	        			<h:outputLabel>Address:</h:outputLabel> 
+						<h:inputText value="#{accounts.address}" class="form-control" id="sAddress" required="true" requiredMessage="This field is required"/>
+		      			<h:message for="sAddress"/>
+	        		</div>
+	       	        <div class="form-group">
+	       	  			<h:outputLabel>Tel Num:</h:outputLabel> 
+						<h:inputText value="#{accounts.telNo}" class="form-control" id="sTelNo" required="true" requiredMessage="This field is required"/>
+		      			<h:message for="sTelNo"/>        	
+	        		</div>
+	        		<div class="form-group">
+	        			<h:outputLabel>Cel No:</h:outputLabel> 
+						<h:inputText value="#{accounts.celNo}" class="form-control" id="sCelNo" required="true" requiredMessage="This field is required"/>
+	      				<h:message for="sCelNo"/>	        	
+	        		</div>
+	        	</div>
+	        	<div class="col-md-5">
+	        		<div class="form-group">
+						<h:outputLabel>Email:</h:outputLabel>
+						<h:inputText type="email" value="#{accounts.email}"  class="form-control" id="sEmail" required="true" requiredMessage="This field is required"/>
+	      				<h:message for="sEmail"/>	        	
+	        		</div>
+	        		<div class="form-group">
+						<h:outputLabel>Password:</h:outputLabel> 
+						<h:inputSecret value="#{accounts.password}" class="form-control" id="sPassword" required="true" requiredMessage="This field is required"/> 
+	      				<h:message for="sPassword"/>	        	
+	        		</div>
+	        		<div class="form-group">
+	        			<h:outputLabel>Status:</h:outputLabel> 
+						<h:selectOneRadio value="#{accounts.accountStatus}" required="true">
+						   	<f:selectItem itemValue="Active" itemLabel="Active" />
+						   	<f:selectItem itemValue="Inactive" itemLabel="Inactive" />
+						</h:selectOneRadio>
+								
+						<div class="pull-right">
+							<h:commandButton value="Save" class="btn btn-info"
+				 			action="#{admincontroller.updateacc(accounts)}"/> 
+						</div>
+	        		</div>
+	        		<p><h:outputLink value="index.xhtml">Back to List</h:outputLink></p>
+	        	</div>
+
+			</h:panelGroup>
+			<h:inputHidden value = "#{accounts.accountID}" id = "hiddeasdasdanField" /> 
+			<h:inputHidden value = "#{accounts.userType}" id = "hiddenField" /> 
+
+	 		
+	</h:form>
+</div>
+</h:body>
+</html>
+

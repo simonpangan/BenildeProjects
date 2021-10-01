@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	 xmlns:ui="http://java.sun.com/jsf/facelets"
+	 xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<h:outputStylesheet library="css_cos" name="style.css"/>
+	<h:outputStylesheet library="bootstrap" name="bootstrap.css"/>
+ 	<h:outputScript library = "js" name = "jquery-3.4.1.min.js" /> 
+ 	
+ 	<style>
+ 	
+ 	.error{
+					
+					color : red;
+					
+					
+				}
+				</style>
+	<title>JCH Log In</title>
+</h:head>
+
+<h:body style="background-image:url('https://coursera_assets.s3.amazonaws.com/front-page-story/hero-banner/robot-girl.jpg'); ">
+
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">JoinCoders</span> HUB | Log In</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.xhtml">HOME</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+	<div id="feature">
+		<h1 class="highlight">LOG IN</h1>
+	</div>    
+
+	<div class="container">
+		 <div class="alert alert-info clearfix">
+				 <div class="container">
+					<h3>We are so excited to welcome you in our HUB!</h3>
+					 <div class="col-md-6 log">			 
+						<h:form>
+							<div class="form-group">
+								<h:outputLabel for="email" value="Email"/>
+								<h:inputText value="#{logincontroller.email}" id="asd" class="form-control"  required="true" requiredMessage="This field is required"/>
+											<h:message for="asd" styleClass="error"/>
+	        		
+							</div>
+							
+							<div class="form-group">
+									<h:outputLabel for="password" value="Password"/>
+									<h:inputSecret value="#{logincontroller.password}"  required="true" requiredMessage="This field is required" id="password" class="form-control"/>
+							<h:message for="password" styleClass="error"/>
+	        		
+							</div>
+							
+							<div class="form-group">
+								<h:commandButton value="Log In" class="btn btn-default pull-right" action="#{logincontroller.login()}"/>
+							</div>	
+							
+							<div class="form-group">
+								<h:outputText style="color: red;" value="#{logincontroller.message}" />
+							</div>	
+						</h:form>		 
+						<br/><br/>
+					</div>
+						  <div class="col-md-5 login-right">
+							  	<h3>NEW REGISTRATION</h3>
+								<p>By creating an account with our site, you will be able to move through the bootcamping process faster, view and track bootcamps in your account and more.</p>
+								<a class="btn btn-default pull-right" href="joiner/joinerregister.xhtml">Sign Up</a>
+						 </div>
+				</div>
+			 <div class="clearfix"></div>
+		</div>
+	</div>
+
+</h:body>
+</html>
+
+

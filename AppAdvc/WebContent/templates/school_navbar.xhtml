@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<ui:insert name="head" >
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<h:outputStylesheet library="css_cos" name="style.css"/>
+		<h:outputStylesheet library="bootstrap" name="bootstrap.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<title>JoinCoders HUB</title>
+	</ui:insert>
+</h:head>
+
+<body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">JoinCoders</span> HUB</h1>
+        </div>
+        <nav>
+         <h:form>
+          <ul>
+            <li class="current">
+            	<h:commandLink value="SCHOOL" action="#{templateController.schoolAcc()}"></h:commandLink>
+            </li>
+            <li>
+            <h:commandLink value="My Bootcamps" action="#{templateController.schoolBootcamps()}"></h:commandLink>
+            </li>
+            <li>
+            	<h:commandLink action="#{logincontroller.logout}">
+            	<i class="fa fa-user fa-1.8x fa-border">Logout</i>
+            	</h:commandLink>
+            </li>
+          </ul>
+          </h:form>
+        </nav>
+      </div>
+    </header>
+</body>
+</html>
+

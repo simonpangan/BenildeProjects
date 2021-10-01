@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+	
+	
+	<f:metadata>
+	
+	
+	<f:event type="preRenderView" 
+		listener="#{logincontroller.isSchool}"/> 
+		
+		
+		  	<f:event type="preRenderView" 
+		listener="#{logincontroller.isLogin}"/> 
+		
+	
+		  
+		  	
+		<f:event type="preRenderView" listener="#{schoolcontroller.loadBootcampslist(logincontroller.accountID)}"/> 
+
+	
+	</f:metadata> 
+	<title>JCH | My Bootcamps</title>
+
+	<h:outputStylesheet library="css" name="style.css" />
+	
+	
+
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.1/css/responsive.dataTables.min.css"/>
+			 
+	
+</h:head>
+<h:body>
+<ui:include src="/templates/school_navbar.xhtml" />
+<div class="container">
+        <br/><br/>
+		<div id="feature">
+			<h1 class="highlight">My Bootcamps</h1>
+		</div>
+		
+        <hr/>
+        <div class="pull-right">
+        
+			<h:button value="ADD BOOTCAMP" class="btn btn-info" outcome="bootcampregister"/>
+		</div>
+		
+
+	<h:dataTable value="#{schoolcontroller.bootcamp}" var="tempboot" id="table_id" class="display nowrap">    
+	
+		<h:column>
+		
+		</h:column>
+		<h:column>
+			<!-- column header -->
+			<f:facet name="header">Joiners List</f:facet>
+			
+				 <h:form>		
+					<h:commandLink value="View Joiners List" action ="#{schoolcontroller.loadjoiners(tempboot.bootcampID)}"/>				
+				</h:form>
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">BootcampName</f:facet>
+		
+			#{tempboot.bootcampName}
+		</h:column>
+		
+		
+		<h:column>
+			<!-- column header -->
+			<f:facet name="header">	BootcampDetails</f:facet>
+			
+			<!-- Display actual value of the column -->
+			#{tempboot.bootcampDetails}
+		</h:column>
+		
+		<h:column>
+			<!-- column header -->
+			<f:facet name="header">	Status</f:facet>
+			
+			<!-- Display actual value of the column -->
+			#{tempboot.status}
+		</h:column>
+		
+			<h:column>
+			<!-- column header -->
+			<f:facet name="header">Class Days</f:facet>
+			
+			<!-- Display actual value of the column -->
+			#{tempboot.classDays}
+		</h:column>
+		
+		
+		
+		<h:column>
+			<!-- column header -->
+			<f:facet name="header">Venue</f:facet>
+			
+			<!-- Display actual value of the column -->
+			#{tempboot.venue}
+		</h:column>
+		
+			<h:column>
+			<!-- column header -->
+			<f:facet name="header">Categorie</f:facet>
+			
+			<!-- Display actual value of the column -->
+			#{tempboot.categorie}
+		</h:column>
+		
+		<h:column>
+			<!-- column header -->
+			<f:facet name="header">Slots</f:facet>
+			
+			<!-- Display actual value of the column -->
+			#{tempboot.slots}
+		</h:column>
+		
+		<h:column>
+			<!-- column header -->
+			<f:facet name="header">Slots left</f:facet>
+			
+			<!-- Display actual value of the column -->
+			#{tempboot.slotsleft}
+		</h:column>
+		
+		<h:column>
+			<!-- column header -->
+			<f:facet name="header">Creation Date</f:facet>
+			
+			<!-- Display actual value of the column -->
+			#{tempboot.creationDate}
+	
+		</h:column>
+		
+
+		<h:column>
+			<!-- column header -->
+			<f:facet name="header">Last Modified Date</f:facet>
+			
+		
+			#{tempboot.modifiedDate}
+		
+		</h:column>
+		
+		
+		<h:column>
+				<!-- column header -->
+			<f:facet name="header">Action</f:facet>		
+				 <h:form>		
+					
+				<h:commandLink value="Update" 
+				action ="#{schoolcontroller.loadBootcamp(tempboot.bootcampID)}" class="btn btn-default"/>				
+				
+				
+				<div class="form-group">
+					<div class="col-md-3">
+						<h:commandLink value="Delete" 
+						onclick="if (!confirm('Are you sure you want to delete this bootcamp??')) return false"
+						action ="#{schoolcontroller.deleteBootcamp(tempboot.bootcampID)}"/>
+					</div>
+				</div>
+
+				</h:form>
+				
+		</h:column>
+			
+	
+	</h:dataTable>
+</div>
+
+			    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+			    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+			    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.1/js/dataTables.responsive.min.js"></script>
+			 
+			    <script type="text/javascript" class="init">
+			     $(document).ready(function() {
+			        $('#table_id').DataTable( {
+			            responsive: {
+			                details: {
+			                    type: 'column', 
+			                    target: 'tr'
+			                }
+			            },
+			            columnDefs: [ {
+			                className: 'control',
+			                orderable: false,
+			                targets:   0
+			            } ],
+			            order: [ 1, 'asc' ]
+			        } );
+			    } );
+			 
+			    </script>
+</h:body>
+
+</html>
+
+

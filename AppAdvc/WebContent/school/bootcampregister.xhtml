@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	 xmlns:ui="http://java.sun.com/jsf/facelets"
+	 xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+
+	<f:metadata>
+	
+			<f:event type="preRenderView" 
+		listener="#{logincontroller.isSchool}"/> 
+		
+		
+		  	<f:event type="preRenderView" 
+		listener="#{logincontroller.isLogin}"/> 
+		
+	</f:metadata>
+	
+	
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<h:outputStylesheet library="css_cos" name="style.css"/>
+	<h:outputStylesheet library="bootstrap" name="bootstrap.css"/>
+ 	<h:outputScript library = "js" name = "jquery-3.4.1.min.js" /> 
+
+	<title>JCH | School</title>
+	
+	<h:outputScript library = "js" name = "jquery-3.4.1.min.js" /> 
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+</h:head>
+
+<h:body>
+<ui:include src="/templates/school_navbar.xhtml" />
+<div class="container">
+	<br/><br/>
+		<div id="feature">
+		<h1 class="highlight">ADD BOOTCAMP</h1>
+		</div>
+		
+		<h:messages globalOnly="true" />
+		
+		<h:form >
+			<h:panelGroup layout="block" >
+				<h1>SCHOOL</h1>
+				<hr/>
+					<div class="col-md-5 col-md-offset-1 log">
+					
+						<div class="form-group">
+							<h:outputLabel>Bootcamp Name:</h:outputLabel>
+							<h:inputText value="#{bootcamp.bootcampName}" id="bootcampName" class="form-control" required="true"/>
+							<h:message for="lastName" />
+		        		</div>
+					
+		        		<div class="form-group">
+							<h:outputLabel>Bootcamp Details:</h:outputLabel>
+							<h:inputText value="#{bootcamp.bootcampDetails}" id="bootcampDetails" class="form-control" required="true"/>
+							<h:message for="lastName" />
+		        		</div>
+		       	        <div class="form-group">
+							<h:outputLabel>Class Days:</h:outputLabel> 
+							<h:inputText value="#{bootcamp.classDays}" id="classDays" class="form-control" required="true"/>
+							<h:message for="lastName" />
+		        		</div>
+		        		<div class="form-group">
+							<h:outputLabel>Status:</h:outputLabel>
+							<h:selectOneRadio value="#{bootcamp.status}" required="true">
+				   					<f:selectItem itemValue="Active" itemLabel="Active" />
+				   					<f:selectItem itemValue="Inactive" itemLabel="Inactive" />
+							</h:selectOneRadio>
+		        		</div>
+		        	</div>
+		        	<div class="col-md-5">
+		        		<div class="form-group">
+							<h:outputLabel>Number of Slots:</h:outputLabel> 
+							<h:inputText value="#{bootcamp.slots}" id="slots" class="form-control" required="true"/>
+		        		</div>
+		        		<div class="form-group">
+							<h:outputLabel>Venue:</h:outputLabel>
+							<h:inputText value="#{bootcamp.venue}" id="venue" class="form-control" required="true"/>
+							<h:message for="lastName" />
+		        		</div>
+		        		<div class="form-group">
+							<h:outputLabel>Categorie:</h:outputLabel>
+								<h:selectOneMenu  value="#{bootcamp.categorie}" class="form-control" required="true"> 
+								<f:selectItem itemValue="" itemLabel="Select.." /> 
+					   				<f:selectItem itemValue="Full-Stack Web Development" itemLabel="Full-Stack Web Development" /> 
+					   				<f:selectItem itemValue="Mobile Development" itemLabel="Mobile Development" />
+					   				<f:selectItem itemValue="Front-End Web Development" itemLabel="Front-End Web Development" />
+					   				<f:selectItem itemValue="Data Science" itemLabel="Data Science" />
+					   				<f:selectItem itemValue="UX Design" itemLabel="UX Design" />
+					   				<f:selectItem itemValue="Digital Marketing" itemLabel="Digital Marketing" />
+					   				<f:selectItem itemValue="Product Management" itemLabel="Product Management" />
+					   				<f:selectItem itemValue="Security" itemLabel="Security" />
+								</h:selectOneMenu >
+								<br/>
+									
+							<div class="pull-right">
+								<h:commandButton value="Save" class="btn btn-info" action="#{schoolcontroller.addbootcamp(bootcamp)}"/>
+							</div>
+							
+		        		</div>
+		        		
+		    		 	<h:inputHidden value="#{bootcamp.accountID}" id="accountid" /> 
+		        		<p><h:outputLink value="schoolindex.xhtml">Back to List</h:outputLink></p>
+		        	</div>
+	
+				</h:panelGroup>
+
+		</h:form>
+
+</div>
+	
+		<script type="text/javascript">
+				
+		$( document ).ready(function() {
+			
+			var temp = "#{logincontroller.accountID}";
+			 $("#form\\:accountid").val(temp);
+			 
+		});
+				
+		</script>
+		
+</h:body>
+</html>
