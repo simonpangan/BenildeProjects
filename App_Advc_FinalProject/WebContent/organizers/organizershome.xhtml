@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Organizers Home</title>
+    </h:head>
+    <h:body>
+        <center>
+            <h2>Categories</h2>
+  	<h:form>
+		<h2>Add </h2>
+		<fieldset>
+
+			<legend>Enter information</legend>
+			
+			
+			Event Name :
+			<h:inputText id="eventname" required="true" requiredMessage="First Name is required" value="#{validatorBean.firstName}" />
+		
+			<h:message for="firstName" styleClass="error"/>
+			
+			Event Category
+			
+			<h:selectOneMenu value="#{accountRegister.role}">
+					<f:selectItem itemValue="" itemLabel="Select.." />
+   					<f:selectItem itemValue="mobiledevelopment" itemLabel="Mobile Development" />
+   					<f:selectItem itemValue="uxdesign" itemLabel="Ux Design" />
+   					<f:selectItem itemValue="productmanagement" itemLabel="Product Management" />
+   					<f:selectItem itemValue="digitalmarketing" itemLabel="Digitalmarketing" />
+   					<f:selectItem itemValue="cybersecurity" itemLabel="Cyber Security" />
+   					<f:selectItem itemValue="fullstack" itemLabel="Full Stack" />
+   			</h:selectOneMenu>
+		
+			
+			<br/>Date: 
+			<h:inputText id="age"  required="true" value="#{validatorBean.age}" validatorMessage="18 to 40 only.">  
+				<f:validateLongRange minimum="18" maximum="40"/>
+			</h:inputText>
+			
+			
+			<h:message for="age" styleClass="error"/>
+				
+			
+			<br /> Place:
+			<h:inputText id="email" required="true" requiredMessage="Last Name is required" value="#{validatorBean.email}">
+				<f:validateRegex pattern="[\w\.-]*[a-zA-Z0-9_]@[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]" />
+			</h:inputText>
+			
+			<h:message for="emailemail" styleClass="error"/>
+			
+				<br /> RegFee
+			<h:inputText id="postalcode" required="true" requiredMessage="strictly 4 digits only" value="#{validatorBean.postalCode}">
+				<f:validateLength minimum="4" maximum="4"  />
+			</h:inputText>
+			
+			
+			<h:message for="postalcode" styleClass="error"/>
+				
+				
+			
+			<br /> Descriptions
+			<h:inputText id="mobilenum" required="true" requiredMessage="Mobile Number Format"  value="#{validatorBean.mobileno}">
+				<f:validateRegex pattern="\+\d{2}-\d{3}-\d{7}"/>
+			</h:inputText>
+			
+				
+			<h:message for="mobilenum" styleClass="error"/> 
+			
+				
+			<br />Slots Available
+			<h:inputText id="coursecode"  validator="#{validatorBean.validateCourseCode}">
+				
+			</h:inputText>
+			
+				
+			<h:message for="coursecode" styleClass="error"/> 
+				
+	
+	
+	<br />Status
+			<h:inputText id="coursecode"  validator="#{validatorBean.validateCourseCode}">
+				
+			</h:inputText>
+			
+				
+			<h:message for="coursecode" styleClass="error"/> 
+				
+			
+			
+			 
+		</fieldset>
+		<h:commandButton value="Submit" action="#{validatorBean.pageRedirect}" />
+
+	</h:form>
+      
+        </center>
+    </h:body>
+</html>

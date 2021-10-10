@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>UX deisgn</title>
+    </h:head>
+    <h:body>
+        <center>
+        
+               <h2>List  of Cybersecurity event list </h2>
+        </center>
+      
+          
+             <h:dataTable value="#{joinerscontroller.cybersecurityList}" var="join">
+        
+                <h:column> 
+                    <f:facet name="header">EventID</f:facet>
+                    <h:outputText value="#{join.eventID}"></h:outputText>
+                </h:column>
+                
+                 <h:column> 
+                    <f:facet name="header">EventID</f:facet>
+                    <h:outputText value="#{join.eventName}"></h:outputText>
+                </h:column>
+          
+            </h:dataTable>
+         
+            
+               
+          
+          
+        
+
+    </h:body>
+</html>
