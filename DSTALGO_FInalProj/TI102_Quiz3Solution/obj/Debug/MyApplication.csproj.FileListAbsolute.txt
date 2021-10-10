@@ -1,0 +1,50 @@
+C:\Users\simon\Documents\TI102_Quiz3Solution\TI102_Quiz3Solution\bin\Debug\TI102_Quiz3Solution.exe.config
+C:\Users\simon\Documents\TI102_Quiz3Solution\TI102_Quiz3Solution\bin\Debug\TI102_Quiz3Solution.exe
+C:\Users\simon\Documents\TI102_Quiz3Solution\TI102_Quiz3Solution\bin\Debug\TI102_Quiz3Solution.pdb
+C:\Users\simon\Documents\TI102_Quiz3Solution\TI102_Quiz3Solution\bin\Debug\MyCollection.dll
+C:\Users\simon\Documents\TI102_Quiz3Solution\TI102_Quiz3Solution\bin\Debug\MyCollection.pdb
+C:\Users\simon\Documents\TI102_Quiz3Solution\TI102_Quiz3Solution\obj\Debug\MyApplication.csprojAssemblyReference.cache
+C:\Users\simon\Documents\TI102_Quiz3Solution\TI102_Quiz3Solution\obj\Debug\MyApplication.csproj.CoreCompileInputs.cache
+C:\Users\simon\Documents\TI102_Quiz3Solution\TI102_Quiz3Solution\obj\Debug\MyApplication.csproj.CopyComplete
+C:\Users\simon\Documents\TI102_Quiz3Solution\TI102_Quiz3Solution\obj\Debug\TI102_Quiz3Solution.exe
+C:\Users\simon\Documents\TI102_Quiz3Solution\TI102_Quiz3Solution\obj\Debug\TI102_Quiz3Solution.pdb
+C:\Users\simon\Downloads\TI102_Quiz3Solution\TI102_Quiz3Solution\bin\Debug\TI102_Quiz3Solution.exe.config
+C:\Users\simon\Downloads\TI102_Quiz3Solution\TI102_Quiz3Solution\bin\Debug\TI102_Quiz3Solution.exe
+C:\Users\simon\Downloads\TI102_Quiz3Solution\TI102_Quiz3Solution\bin\Debug\TI102_Quiz3Solution.pdb
+C:\Users\simon\Downloads\TI102_Quiz3Solution\TI102_Quiz3Solution\bin\Debug\MyCollection.dll
+C:\Users\simon\Downloads\TI102_Quiz3Solution\TI102_Quiz3Solution\bin\Debug\MyCollection.pdb
+C:\Users\simon\Downloads\TI102_Quiz3Solution\TI102_Quiz3Solution\obj\Debug\MyApplication.csprojAssemblyReference.cache
+C:\Users\simon\Downloads\TI102_Quiz3Solution\TI102_Quiz3Solution\obj\Debug\MyApplication.csproj.CoreCompileInputs.cache
+C:\Users\simon\Downloads\TI102_Quiz3Solution\TI102_Quiz3Solution\obj\Debug\MyApplication.csproj.CopyComplete
+C:\Users\simon\Downloads\TI102_Quiz3Solution\TI102_Quiz3Solution\obj\Debug\TI102_Quiz3Solution.exe
+C:\Users\simon\Downloads\TI102_Quiz3Solution\TI102_Quiz3Solution\obj\Debug\TI102_Quiz3Solution.pdb
+C:\Users\simon\Downloads\FInal\TI102_Quiz3Solution - Copy\TI102_Quiz3Solution\bin\Debug\TI102_Quiz3Solution.exe.config
+C:\Users\simon\Downloads\FInal\TI102_Quiz3Solution - Copy\TI102_Quiz3Solution\bin\Debug\TI102_Quiz3Solution.exe
+C:\Users\simon\Downloads\FInal\TI102_Quiz3Solution - Copy\TI102_Quiz3Solution\bin\Debug\TI102_Quiz3Solution.pdb
+C:\Users\simon\Downloads\FInal\TI102_Quiz3Solution - Copy\TI102_Quiz3Solution\bin\Debug\MyCollection.dll
+C:\Users\simon\Downloads\FInal\TI102_Quiz3Solution - Copy\TI102_Quiz3Solution\bin\Debug\MyCollection.pdb
+C:\Users\simon\Downloads\FInal\TI102_Quiz3Solution - Copy\TI102_Quiz3Solution\obj\Debug\MyApplication.csprojAssemblyReference.cache
+C:\Users\simon\Downloads\FInal\TI102_Quiz3Solution - Copy\TI102_Quiz3Solution\obj\Debug\MyApplication.csproj.CoreCompileInputs.cache
+C:\Users\simon\Downloads\FInal\TI102_Quiz3Solution - Copy\TI102_Quiz3Solution\obj\Debug\MyApplication.csproj.CopyComplete
+C:\Users\simon\Downloads\FInal\TI102_Quiz3Solution - Copy\TI102_Quiz3Solution\obj\Debug\TI102_Quiz3Solution.exe
+C:\Users\simon\Downloads\FInal\TI102_Quiz3Solution - Copy\TI102_Quiz3Solution\obj\Debug\TI102_Quiz3Solution.pdb
+C:\Users\simon\Downloads\FInal\FInal Proj\TI102_Quiz3Solution\bin\Debug\TI102_Quiz3Solution.exe.config
+C:\Users\simon\Downloads\FInal\FInal Proj\TI102_Quiz3Solution\bin\Debug\TI102_Quiz3Solution.exe
+C:\Users\simon\Downloads\FInal\FInal Proj\TI102_Quiz3Solution\bin\Debug\TI102_Quiz3Solution.pdb
+C:\Users\simon\Downloads\FInal\FInal Proj\TI102_Quiz3Solution\bin\Debug\MyCollection.dll
+C:\Users\simon\Downloads\FInal\FInal Proj\TI102_Quiz3Solution\bin\Debug\MyCollection.pdb
+C:\Users\simon\Downloads\FInal\FInal Proj\TI102_Quiz3Solution\obj\Debug\MyApplication.csprojAssemblyReference.cache
+C:\Users\simon\Downloads\FInal\FInal Proj\TI102_Quiz3Solution\obj\Debug\MyApplication.csproj.CoreCompileInputs.cache
+C:\Users\simon\Downloads\FInal\FInal Proj\TI102_Quiz3Solution\obj\Debug\MyApplication.csproj.CopyComplete
+C:\Users\simon\Downloads\FInal\FInal Proj\TI102_Quiz3Solution\obj\Debug\TI102_Quiz3Solution.exe
+C:\Users\simon\Downloads\FInal\FInal Proj\TI102_Quiz3Solution\obj\Debug\TI102_Quiz3Solution.pdb
+C:\Users\simon\Downloads\FInal\Final Proj-Xu,Pangan,Angles,Samoy\FInal Proj\TI102_Quiz3Solution\bin\Debug\TI102_Quiz3Solution.exe.config
+C:\Users\simon\Downloads\FInal\Final Proj-Xu,Pangan,Angles,Samoy\FInal Proj\TI102_Quiz3Solution\bin\Debug\TI102_Quiz3Solution.exe
+C:\Users\simon\Downloads\FInal\Final Proj-Xu,Pangan,Angles,Samoy\FInal Proj\TI102_Quiz3Solution\bin\Debug\TI102_Quiz3Solution.pdb
+C:\Users\simon\Downloads\FInal\Final Proj-Xu,Pangan,Angles,Samoy\FInal Proj\TI102_Quiz3Solution\bin\Debug\MyCollection.dll
+C:\Users\simon\Downloads\FInal\Final Proj-Xu,Pangan,Angles,Samoy\FInal Proj\TI102_Quiz3Solution\bin\Debug\MyCollection.pdb
+C:\Users\simon\Downloads\FInal\Final Proj-Xu,Pangan,Angles,Samoy\FInal Proj\TI102_Quiz3Solution\obj\Debug\MyApplication.csprojAssemblyReference.cache
+C:\Users\simon\Downloads\FInal\Final Proj-Xu,Pangan,Angles,Samoy\FInal Proj\TI102_Quiz3Solution\obj\Debug\MyApplication.csproj.CoreCompileInputs.cache
+C:\Users\simon\Downloads\FInal\Final Proj-Xu,Pangan,Angles,Samoy\FInal Proj\TI102_Quiz3Solution\obj\Debug\MyApplication.csproj.CopyComplete
+C:\Users\simon\Downloads\FInal\Final Proj-Xu,Pangan,Angles,Samoy\FInal Proj\TI102_Quiz3Solution\obj\Debug\TI102_Quiz3Solution.exe
+C:\Users\simon\Downloads\FInal\Final Proj-Xu,Pangan,Angles,Samoy\FInal Proj\TI102_Quiz3Solution\obj\Debug\TI102_Quiz3Solution.pdb
